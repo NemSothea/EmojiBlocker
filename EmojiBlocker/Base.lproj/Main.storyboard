@@ -22,25 +22,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I2A-4c-6bW">
-                                <rect key="frame" x="40" y="65" width="334" height="140"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="r2G-jD-5Gh"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyError" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms0-Wa-c0k">
-                                <rect key="frame" x="40" y="213" width="49" height="16"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid Specail Character and emoji( e.g : @:?!()$\\/# \n)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms0-Wa-c0k">
+                                <rect key="frame" x="40" y="218" width="334" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQh-Yc-pHE">
-                                <rect key="frame" x="40" y="253" width="334" height="40"/>
+                                <rect key="frame" x="40" y="258" width="334" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aJ2-ge-Wcv"/>
                                 </constraints>
@@ -52,6 +41,16 @@
                                     <action selector="doneAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nwB-W2-1Qt"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I2A-4c-6bW">
+                                <rect key="frame" x="40" y="70" width="334" height="140"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="r2G-jD-5Gh"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,7 +58,7 @@
                             <constraint firstItem="Hnc-aC-D7o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6mF-lF-LPJ"/>
                             <constraint firstItem="Ms0-Wa-c0k" firstAttribute="top" secondItem="I2A-4c-6bW" secondAttribute="bottom" constant="8" symbolic="YES" id="Dfs-sF-JTn"/>
                             <constraint firstItem="Hnc-aC-D7o" firstAttribute="leading" secondItem="I2A-4c-6bW" secondAttribute="leading" id="EIu-bB-iKw"/>
-                            <constraint firstItem="I2A-4c-6bW" firstAttribute="top" secondItem="Hnc-aC-D7o" secondAttribute="bottom" id="LJK-kb-k7t"/>
+                            <constraint firstItem="I2A-4c-6bW" firstAttribute="top" secondItem="Hnc-aC-D7o" secondAttribute="bottom" constant="5" id="LJK-kb-k7t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I2A-4c-6bW" secondAttribute="trailing" constant="40" id="M1b-uh-Kpn"/>
                             <constraint firstItem="qQh-Yc-pHE" firstAttribute="trailing" secondItem="I2A-4c-6bW" secondAttribute="trailing" id="jZP-qm-wg6"/>
                             <constraint firstItem="qQh-Yc-pHE" firstAttribute="top" secondItem="Ms0-Wa-c0k" secondAttribute="top" constant="40" id="rzJ-AA-1dH"/>
@@ -85,6 +84,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
