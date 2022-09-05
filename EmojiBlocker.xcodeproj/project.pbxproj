@@ -13,6 +13,14 @@
 		55C95D3D28BC3DBF00B7898C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C95D3B28BC3DBF00B7898C /* Main.storyboard */; };
 		55C95D3F28BC3DC200B7898C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C95D3E28BC3DC200B7898C /* Assets.xcassets */; };
 		55C95D4228BC3DC200B7898C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C95D4028BC3DC200B7898C /* LaunchScreen.storyboard */; };
+		55C95D4B28BED71400B7898C /* SwipeableCellsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C95D4A28BED71400B7898C /* SwipeableCellsSB.storyboard */; };
+		55C95D4E28BED88700B7898C /* SwipeableCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C95D4D28BED88700B7898C /* SwipeableCellVC.swift */; };
+		55C95D5128BEE95E00B7898C /* MountainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C95D5028BEE95E00B7898C /* MountainVC.swift */; };
+		55C95D5328BF229700B7898C /* MountainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C95D5228BF229700B7898C /* MountainTableVC.swift */; };
+		55C95D5528BF28CD00B7898C /* MountainSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C95D5428BF28CD00B7898C /* MountainSB.storyboard */; };
+		55C95D5728BF528E00B7898C /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C95D5628BF528E00B7898C /* MyData.swift */; };
+		55C95D5A28C06C4400B7898C /* Card_Swipe_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C95D5928C06C4400B7898C /* Card_Swipe_ViewController.swift */; };
+		55C95D5C28C06E2A00B7898C /* Card_Swipe_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C95D5B28C06E2A00B7898C /* Card_Swipe_Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		55C95D3E28BC3DC200B7898C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55C95D4128BC3DC200B7898C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55C95D4328BC3DC200B7898C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C95D4A28BED71400B7898C /* SwipeableCellsSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwipeableCellsSB.storyboard; sourceTree = "<group>"; };
+		55C95D4D28BED88700B7898C /* SwipeableCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCellVC.swift; sourceTree = "<group>"; };
+		55C95D5028BEE95E00B7898C /* MountainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainVC.swift; sourceTree = "<group>"; };
+		55C95D5228BF229700B7898C /* MountainTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainTableVC.swift; sourceTree = "<group>"; };
+		55C95D5428BF28CD00B7898C /* MountainSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MountainSB.storyboard; sourceTree = "<group>"; };
+		55C95D5628BF528E00B7898C /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		55C95D5928C06C4400B7898C /* Card_Swipe_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_Swipe_ViewController.swift; sourceTree = "<group>"; };
+		55C95D5B28C06E2A00B7898C /* Card_Swipe_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card_Swipe_Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		55C95D3428BC3DBF00B7898C /* EmojiBlocker */ = {
 			isa = PBXGroup;
 			children = (
+				55C95D4928BED6F300B7898C /* UITableView */,
 				55C95D3528BC3DBF00B7898C /* AppDelegate.swift */,
 				55C95D3728BC3DBF00B7898C /* SceneDelegate.swift */,
 				55C95D3928BC3DBF00B7898C /* ViewController.swift */,
@@ -65,6 +82,45 @@
 				55C95D4328BC3DC200B7898C /* Info.plist */,
 			);
 			path = EmojiBlocker;
+			sourceTree = "<group>";
+		};
+		55C95D4928BED6F300B7898C /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				55C95D5828C06C0600B7898C /* Card_Swipe */,
+				55C95D4F28BEDBE500B7898C /* DiffableDataSource */,
+				55C95D4C28BED7B300B7898C /* Swipeable Cells */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		55C95D4C28BED7B300B7898C /* Swipeable Cells */ = {
+			isa = PBXGroup;
+			children = (
+				55C95D4A28BED71400B7898C /* SwipeableCellsSB.storyboard */,
+				55C95D4D28BED88700B7898C /* SwipeableCellVC.swift */,
+			);
+			path = "Swipeable Cells";
+			sourceTree = "<group>";
+		};
+		55C95D4F28BEDBE500B7898C /* DiffableDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				55C95D5028BEE95E00B7898C /* MountainVC.swift */,
+				55C95D5228BF229700B7898C /* MountainTableVC.swift */,
+				55C95D5428BF28CD00B7898C /* MountainSB.storyboard */,
+				55C95D5628BF528E00B7898C /* MyData.swift */,
+			);
+			path = DiffableDataSource;
+			sourceTree = "<group>";
+		};
+		55C95D5828C06C0600B7898C /* Card_Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				55C95D5928C06C4400B7898C /* Card_Swipe_ViewController.swift */,
+				55C95D5B28C06E2A00B7898C /* Card_Swipe_Storyboard.storyboard */,
+			);
+			path = Card_Swipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +181,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C95D5C28C06E2A00B7898C /* Card_Swipe_Storyboard.storyboard in Resources */,
 				55C95D4228BC3DC200B7898C /* LaunchScreen.storyboard in Resources */,
 				55C95D3F28BC3DC200B7898C /* Assets.xcassets in Resources */,
+				55C95D5528BF28CD00B7898C /* MountainSB.storyboard in Resources */,
+				55C95D4B28BED71400B7898C /* SwipeableCellsSB.storyboard in Resources */,
 				55C95D3D28BC3DBF00B7898C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C95D3A28BC3DBF00B7898C /* ViewController.swift in Sources */,
+				55C95D5A28C06C4400B7898C /* Card_Swipe_ViewController.swift in Sources */,
+				55C95D4E28BED88700B7898C /* SwipeableCellVC.swift in Sources */,
+				55C95D5128BEE95E00B7898C /* MountainVC.swift in Sources */,
+				55C95D5328BF229700B7898C /* MountainTableVC.swift in Sources */,
 				55C95D3628BC3DBF00B7898C /* AppDelegate.swift in Sources */,
+				55C95D5728BF528E00B7898C /* MyData.swift in Sources */,
 				55C95D3828BC3DBF00B7898C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,10 +354,10 @@
 				DEVELOPMENT_TEAM = 62EMNW6G6D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EmojiBlocker/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = EmojiBlocker;
+				INFOPLIST_KEY_CFBundleDisplayName = LeaningSwift;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MountainSB;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +383,10 @@
 				DEVELOPMENT_TEAM = 62EMNW6G6D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EmojiBlocker/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = EmojiBlocker;
+				INFOPLIST_KEY_CFBundleDisplayName = LeaningSwift;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MountainSB;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
