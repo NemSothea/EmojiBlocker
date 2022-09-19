@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552BF92828D1CB3100527B67 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552BF92728D1CB3100527B67 /* SectionHeaderView.xib */; };
+		552BF92A28D1CB4E00527B67 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552BF92928D1CB4E00527B67 /* SectionHeaderView.swift */; };
+		552BF92D28D2E81300527B67 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552BF92C28D2E81300527B67 /* SectionFooterView.swift */; };
+		552BF92F28D2FD3400527B67 /* SectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552BF92E28D2FD3400527B67 /* SectionFooterView.xib */; };
+		5597F8FE28C5DBE0003182A5 /* HeaderTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597F8FD28C5DBE0003182A5 /* HeaderTableViewVC.swift */; };
+		5597F90028C5DC1D003182A5 /* HeaderTableViewSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5597F8FF28C5DC1D003182A5 /* HeaderTableViewSB.storyboard */; };
+		55B791CB28C8853A009549AC /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B791CA28C8853A009549AC /* HeaderView.xib */; };
+		55B791CD28C88593009549AC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B791CC28C88593009549AC /* HeaderView.swift */; };
 		55C95D3628BC3DBF00B7898C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C95D3528BC3DBF00B7898C /* AppDelegate.swift */; };
 		55C95D3828BC3DBF00B7898C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C95D3728BC3DBF00B7898C /* SceneDelegate.swift */; };
 		55C95D3A28BC3DBF00B7898C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C95D3928BC3DBF00B7898C /* ViewController.swift */; };
@@ -24,6 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552BF92728D1CB3100527B67 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		552BF92928D1CB4E00527B67 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		552BF92C28D2E81300527B67 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
+		552BF92E28D2FD3400527B67 /* SectionFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionFooterView.xib; sourceTree = "<group>"; };
+		5597F8FD28C5DBE0003182A5 /* HeaderTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewVC.swift; sourceTree = "<group>"; };
+		5597F8FF28C5DC1D003182A5 /* HeaderTableViewSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HeaderTableViewSB.storyboard; sourceTree = "<group>"; };
+		55B791CA28C8853A009549AC /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		55B791CC28C88593009549AC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		55C95D3228BC3DBF00B7898C /* EmojiBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C95D3528BC3DBF00B7898C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C95D3728BC3DBF00B7898C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +69,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5597F8FC28C5DBAA003182A5 /* Header Footer Sections */ = {
+			isa = PBXGroup;
+			children = (
+				5597F8FD28C5DBE0003182A5 /* HeaderTableViewVC.swift */,
+				5597F8FF28C5DC1D003182A5 /* HeaderTableViewSB.storyboard */,
+				55B791CA28C8853A009549AC /* HeaderView.xib */,
+				55B791CC28C88593009549AC /* HeaderView.swift */,
+				552BF92728D1CB3100527B67 /* SectionHeaderView.xib */,
+				552BF92C28D2E81300527B67 /* SectionFooterView.swift */,
+				552BF92928D1CB4E00527B67 /* SectionHeaderView.swift */,
+				552BF92E28D2FD3400527B67 /* SectionFooterView.xib */,
+			);
+			path = "Header Footer Sections";
+			sourceTree = "<group>";
+		};
 		55C95D2928BC3DBF00B7898C = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +118,7 @@
 		55C95D4928BED6F300B7898C /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				5597F8FC28C5DBAA003182A5 /* Header Footer Sections */,
 				55C95D5828C06C0600B7898C /* Card_Swipe */,
 				55C95D4F28BEDBE500B7898C /* DiffableDataSource */,
 				55C95D4C28BED7B300B7898C /* Swipeable Cells */,
@@ -185,6 +217,10 @@
 				55C95D4228BC3DC200B7898C /* LaunchScreen.storyboard in Resources */,
 				55C95D3F28BC3DC200B7898C /* Assets.xcassets in Resources */,
 				55C95D5528BF28CD00B7898C /* MountainSB.storyboard in Resources */,
+				552BF92828D1CB3100527B67 /* SectionHeaderView.xib in Resources */,
+				55B791CB28C8853A009549AC /* HeaderView.xib in Resources */,
+				5597F90028C5DC1D003182A5 /* HeaderTableViewSB.storyboard in Resources */,
+				552BF92F28D2FD3400527B67 /* SectionFooterView.xib in Resources */,
 				55C95D4B28BED71400B7898C /* SwipeableCellsSB.storyboard in Resources */,
 				55C95D3D28BC3DBF00B7898C /* Main.storyboard in Resources */,
 			);
@@ -197,10 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552BF92A28D1CB4E00527B67 /* SectionHeaderView.swift in Sources */,
+				5597F8FE28C5DBE0003182A5 /* HeaderTableViewVC.swift in Sources */,
 				55C95D3A28BC3DBF00B7898C /* ViewController.swift in Sources */,
 				55C95D5A28C06C4400B7898C /* Card_Swipe_ViewController.swift in Sources */,
 				55C95D4E28BED88700B7898C /* SwipeableCellVC.swift in Sources */,
 				55C95D5128BEE95E00B7898C /* MountainVC.swift in Sources */,
+				55B791CD28C88593009549AC /* HeaderView.swift in Sources */,
+				552BF92D28D2E81300527B67 /* SectionFooterView.swift in Sources */,
 				55C95D5328BF229700B7898C /* MountainTableVC.swift in Sources */,
 				55C95D3628BC3DBF00B7898C /* AppDelegate.swift in Sources */,
 				55C95D5728BF528E00B7898C /* MyData.swift in Sources */,
