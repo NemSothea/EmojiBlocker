@@ -10,9 +10,22 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var coordinator : SubWaysCoordinator?
+    var window      : UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // create the main navigation controller to be used for our app
+        let navController = UINavigationController()
+        // tell the coordinator to take over control
+        coordinator = SubWaysCoordinator(navigatorController: navController)
+        // tell the coordinator to take over control
+        coordinator?.start()
+        // create a basic UIWindow and activate it
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        
         // Override point for customization after application launch.
         return true
     }
